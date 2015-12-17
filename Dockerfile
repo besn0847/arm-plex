@@ -8,7 +8,7 @@ RUN apt-get update \
 	&& echo "deb https://dev2day.de/pms/ jessie main" | sudo tee /etc/apt/sources.list.d/pms.list \
 	&& apt-get update \
 	&& apt-get install -y --force-yes --no-install-recommends \
-		plexmediaserver
+		plexmediaserver \
         && apt-get autoclean \
         && apt-get autoremove \
         && rm -rf /var/lib/apt/lists/*
